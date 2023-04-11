@@ -20,7 +20,7 @@ const User = ({
 }) => {
 	const navigate = useNavigate();
 	return (
-		<Card>
+		<Card value={active}>
 			<UserInfo>
 				<ImgCard src={profileImage} alt='' />
 

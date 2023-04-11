@@ -5,5 +5,10 @@ const ContainerHome = styled.div`
 	margin-left: auto;
 	text-align: center;
 `;
-
-export { ContainerHome };
+const StyledH1 = styled.h1`
+	width: 100%;
+	border-radius: 2rem;
+	background-color: white;
+	padding: 1rem;
+`;
+export { ContainerHome, StyledH1 };
