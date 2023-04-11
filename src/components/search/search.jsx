@@ -1,3 +1,4 @@
+import filterActive from '../filter-users/FilterUsers';
 import { StyledForm } from './styled';
 
 const Search = ({ check, setCheck }) => {
@@ -24,13 +25,13 @@ const Search = ({ check, setCheck }) => {
 		</StyledForm>
 	);
 };
-const filterActive = active => {
-	let usersFilter = [];
-	if (active) {
-		usersFilter = USERS.filter(user => user.active);
-	} else {
-		usersFilter = [...USERS];
-	}
-	console.log(active);
-};
+// const filterActive = active => {
+// 	let usersFilter = [];
+// 	if (active) {
+// 		usersFilter = USERS.filter(user => user.active);
+// 	} else {
+// 		usersFilter = [...USERS];
+// 	}
+// 	console.log(active);
+// };
 export default Search;

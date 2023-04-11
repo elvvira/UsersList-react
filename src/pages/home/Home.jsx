@@ -3,9 +3,11 @@ import User from '../../components/user/User';
 import { USERS } from '../../constants/info';
 import { ContainerHome } from './styled';
 import Search from '../../components/search/search';
+import filterActive from '../../components/filter-users/FilterUsers';
 
 const Home = () => {
 	const [check, setCheck] = useState();
+	const USERS = filterActive();
 	return (
 		<ContainerHome>
 			<h1>Listado de usuarios</h1>
